@@ -18,7 +18,7 @@ class _RandomUserScreenState extends State<RandomUserScreen> {
   @override
   void initState() {
     super.initState();
-    onPressed(); // Auto-fetch on screen load
+    onPressed();
   }
 
   @override
@@ -91,7 +91,7 @@ class _RandomUserScreenState extends State<RandomUserScreen> {
 
     try {
       var response = await http.get(
-        Uri.parse('httpshhhh://omuhsgzhnse.me/api/'),
+        Uri.parse('https://randomuser.me/api/'),
       );
 
       if (response.statusCode == 200) {
